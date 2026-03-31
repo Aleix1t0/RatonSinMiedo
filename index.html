@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home raton sin miedo</title>
+    <meta name="description" content="raton sin miedo home">
+    <meta name="author" content="Karol gallo">
+    <link rel="shortcut icon" href="images/logo-rojo.png" type="image/x-icon">
+
+    <!-- Font Awesome 6 — iconos (CDN para garantizar carga) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+    <!-- ════════════════════════════════════════════
+         1. HERO
+    ════════════════════════════════════════════ -->
+    <section class="hero" aria-label="Banner principal">
+
+        <div class="hero__bg" role="presentation"></div>
+        <div class="hero__overlay" role="presentation"></div>
+
+        <nav class="hero__nav" aria-label="Navegación principal">
+
+            <img
+                class="hero__logo"
+                src="images/raton-logo-blanco.png"
+                alt="Ratón sin Miedo"
+                width="53"
+                height="79"
+            >
+
+            <!-- Links desktop -->
+            <ul class="hero__nav-links" id="nav-menu">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li class="nav-dropdown">
+                    <a href="colecciones.html" class="nav-dropdown__trigger">
+                        Colecciones <i class="fa-solid fa-chevron-down nav-dropdown__arrow"></i>
+                    </a>
+                    <ul class="nav-dropdown__menu" role="menu">
+                        <li><a href="colecciones.html" role="menuitem">Gatitos con ansiedad</a></li>
+                        <li><a href="overthegardenwall.html" role="menuitem">Over the Garden Wall</a></li>
+                        <li><a href="rocky.html" role="menuitem">The Rocky Horror Picture Show</a></li>
+                        <li><a href="frieren.html" role="menuitem">Frieren</a></li>
+                        <li><a href="nadie.html" role="menuitem">"Nadie es ilegal"</a></li>
+                    </ul>
+                </li>
+                <li><a href="tienda.html">Tienda</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+
+            <div class="hero__nav-icons">
+                <button class="hero__nav-icon" aria-label="Buscar">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+                <button class="hero__nav-icon hero__nav-icon--hamburger" aria-label="Abrir menú" id="hamburger-btn">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <button class="hero__nav-icon hero__nav-icon--bag" aria-label="Tienda">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                </button>
+            </div>
+        </nav>
+
+        <!-- Menú mobile desplegable -->
+        <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li class="mobile-menu__has-sub">
+                    <span class="mobile-menu__sub-title">Colecciones</span>
+                    <ul class="mobile-menu__sub">
+                        <li><a href="colecciones.html">Gatitos con ansiedad</a></li>
+                        <li><a href="overthegardenwall.html">Over the Garden Wall</a></li>
+                        <li><a href="rocky.html">The Rocky Horror Picture Show</a></li>
+                        <li><a href="frieren.html">Frieren</a></li>
+                        <li><a href="nadie.html">"Nadie es ilegal"</a></li>
+                    </ul>
+                </li>
+                <li><a href="tienda.html">Tienda</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </div>
+
+        <!-- Flechas decorativas + controles de fondo -->
+        <div class="hero__body">
+
+            <button class="hero__arrow hero__arrow--left" data-hero-dir="prev" aria-label="Fondo anterior">
+                <svg width="18" height="28" viewBox="0 0 18 28" fill="none">
+                    <path d="M14 2L3 14L14 26" stroke="#F1D1AC" stroke-width="2.5"
+                          stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+
+            <div class="hero__content">
+                <span class="hero__somos">Somos</span>
+                <h1 class="hero__title font-display">Ratón<br>sin<br>miedo</h1>
+                <p class="hero__tagline">
+                    Somos ratones con mucha ansiedad,<br>pero sin miedo al futuro.
+                </p>
+            </div>
+
+            <button class="hero__arrow hero__arrow--right" data-hero-dir="next" aria-label="Siguiente fondo">
+                <svg width="18" height="28" viewBox="0 0 18 28" fill="none">
+                    <path d="M4 2L15 14L4 26" stroke="#F1D1AC" stroke-width="2.5"
+                          stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+
+        </div>
+    </section>
+
+
+    <!-- ════════════════════════════════════════════
+         2. COLECCIONES
+    ════════════════════════════════════════════ -->
+    <section class="collections" aria-label="Colecciones">
+
+        <header class="collections__header">
+            <h2 class="collections__title font-display">Colecciones</h2>
+            <p class="collections__subtitle">Nuestras colecciones y trabajos en proceso</p>
+        </header>
+
+        <div class="collections__grid">
+
+            <article class="card">
+                <div class="card__img">
+                    <img src="images/col-otgw.png" alt="Camiseta Over the Garden Wall">
+                </div>
+                <div class="card__body">
+                    <p class="card__name">Over the garden wall</p>
+                    <a href="overthegardenwall.html" class="btn--green">Ver más</a>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card__img">
+                    <img src="images/col-gatitos.jpeg" alt="Gatitos con ansiedad">
+                </div>
+                <div class="card__body">
+                    <p class="card__name">Gatitos con ansiedad</p>
+                    <a href="colecciones.html" class="btn--green">Ver más</a>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card__img">
+                    <img src="images/col-rocky.jpeg" alt="The Rocky Horror Picture Show">
+                </div>
+                <div class="card__body">
+                    <p class="card__name">The Rocky Horror Picture Show</p>
+                    <a href="rocky.html" class="btn--green">Ver más</a>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card__img">
+                    <img src="images/col-frieren.jpg" alt="Frieren — ilustración serigrafía">
+                </div>
+                <div class="card__body">
+                    <p class="card__name">Frieren</p>
+                    <a href="frieren.html" class="btn--green">Ver más</a>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card__img">
+                    <img src="images/col-nadie.jpeg" alt="Nadie es ilegal — serigrafía">
+                </div>
+                <div class="card__body">
+                    <p class="card__name">"Nadie es ilegal"</p>
+                    <a href="nadie.html" class="btn--green">Ver más</a>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+
+    <!-- ════════════════════════════════════════════
+         3. ABOUT — ¿Qué es Ratón sin Miedo?
+    ════════════════════════════════════════════ -->
+    <section class="about" aria-label="Sobre Ratón sin Miedo">
+
+        <div class="about__text-block">
+            <span class="about__eyebrow">¿Que es?</span>
+            <h2 class="about__title">Ratón sin miedo</h2>
+            <p class="about__body">
+                Irónicamente dos mujeres llenas de ansiedad iniciamos Ratón. Empezó como un
+                deseo oculto entre chistes, porque el humor puede ser un susurro en el que te
+                ocultas. Entre tanto chiste, poco a poco se volvió una realidad. Subió la voz
+                y se convirtió en Ratón sin miedo. Tal vez por eso queremos trabajar para gente
+                como nosotras: incómodas, un poco raras e introvertidas. Ratón sin miedo es una
+                propuesta artística nacida desde el amor por la ilustración.
+            </p>
+            <p><a href="about.html" class="btn--wine">Ver más</a></p>
+        </div>
+
+        <div class="about__img">
+            <img src="images/about-img.jpeg" alt="Postal ilustrada Ratón sin Miedo">
+        </div>
+
+    </section>
+
+
+    <!-- ════════════════════════════════════════════
+         4. LO QUE NOS INSPIRA
+    ════════════════════════════════════════════ -->
+    <section class="inspira" aria-label="Lo que nos inspira">
+
+        <h2 class="inspira__title font-display">Lo que nos inspira</h2>
+
+        <div class="inspira__text-frame">
+            <p class="inspira__text">
+                Utilizamos la naturalez, el arte y cierta noción de cáos como motor de
+                creación y una forma de encontrar el valor del arte y la ilustración que
+                ponemos en nuestros objetos.
+            </p>
+        </div>
+
+    </section>
+
+
+    <!-- ════════════════════════════════════════════
+         5. NUESTRO EQUIPO
+    ════════════════════════════════════════════ -->
+    <section class="team" aria-label="Nuestro equipo">
+
+        <h2 class="team__title font-display">Nuestro equipo</h2>
+
+        <div class="team__grid">
+
+            <article class="member">
+                <div class="member__photo">
+                    <img src="images/team-laura.jpeg" alt="Laura Díaz">
+                </div>
+                <div class="member__info">
+                    <h3 class="member__name font-display">Laura Díaz</h3>
+                    <p class="member__role">Gestión de mercancía</p>
+                </div>
+            </article>
+
+            <article class="member">
+                <div class="member__photo">
+                    <img src="images/team-gabriela.jpeg" alt="Gabriela Di Mielle">
+                </div>
+                <div class="member__info">
+                    <h3 class="member__name font-display">Gabriela Di Mielle</h3>
+                    <p class="member__role">Marketing y redes</p>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+
+    <!-- ════════════════════════════════════════════
+         6. FOOTER
+    ════════════════════════════════════════════ -->
+    <footer class="footer" aria-label="Pie de página">
+
+        <div class="footer__inner">
+
+            <!-- Col 1: Logo + dirección + email -->
+            <div class="footer__brand">
+                <a href="index.html" class="footer__logo-link">
+                    <img
+                        class="footer__logo" src="images/logo-rojo.png" alt="Ratón sin Miedo" width="89" height="112"
+                    >
+                </a>
+                <address class="footer__address">
+                    <p>Kr5 #6b - 50</p>
+                    <p>+57-333 7155134</p>
+                    <p class="footer__email">ratonsinmiedo@gmail.com</p>
+                </address>
+            </div>
+
+            <!-- Col 2: Navegación -->
+            <div>
+                <span class="footer__col-title">Ratón sin miedo</span>
+                <nav class="footer__nav" aria-label="Menú footer">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="colecciones.html">Colecciones</a>
+                    <a href="tienda.html">Tienda</a>
+                    <a href="blog.html">Blog</a>
+                </nav>
+            </div>
+
+            <!-- Col 3: Información -->
+            <div>
+                <span class="footer__col-title">Información</span>
+                <nav class="footer__info" aria-label="Información">
+                    <a href="#">Soporte de productos</a>
+                    <a href="#">Sigue tu pedido</a>
+                    <a href="#">Políticas</a>
+                    <a href="#">Devoluciones</a>
+                </nav>
+            </div>
+
+            <!-- Col 4: Contacto -->
+            <div>
+                <span class="footer__col-title">Contacto</span>
+                <div class="footer__social">
+                    <a href="https://www.instagram.com/ratonsinmiedo?igsh=djhrYjN5b244bHVk" aria-label="Síguenos en Instagram" target="_blank" rel="noopener">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="#" aria-label="Síguenos en Facebook" target="_blank" rel="noopener">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.tiktok.com/@raton.sin.miedo" aria-label="Contáctanos por TikTok" target="_blank" rel="noopener">
+                        <i class="fa-brands fa-tiktok"></i>
+                    </a>
+                     <a href="https://l.instagram.com/?u=https%3A%2F%2Fwa.me%2Fc%2F573337155134%3Futm_source%3Dig%26utm_medium%3Dsocial%26utm_content%3Dlink_in_bio%26fbclid%3DPAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnS6jty4v8LMUCx2iz-spdZbRvUEsHA3uMK_7zi77ctGq3ln0jvOvZajJDkGY_aem_ALa05v6FEXMoqRFcWZmpUA&e=AT7pekSHJeFXGN1HCJXXSYn9yuwvh3We7jbUv86wxtn8JyfN7ifb2MipOksy78RbpOYRB2Yy22dVsdAdKppnVOdoUJeEhUKSOpgLB9wMFkRzd2ZGjOPUjSBwXw" aria-label="Contáctanos por WhatsApp" target="_blank" rel="noopener">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    
+                </div>
+            </div>
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3977.0101714239454!2d-74.08090871388347!3d4.592196932391077!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f99a9f0b489ed%3A0xd87d430e3b54e823!2zQ3JhLiA1ICM2Qi01MCwgQm9nb3TDoSwgRC5DLCBCb2dvdMOh!5e0!3m2!1ses!2sco!4v1774751571352!5m2!1ses!2sco" width="200" height="120" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </div>
+
+        <!-- Copyright — mobile: centrado | desktop: izq/der -->
+        <div class="footer__copy">
+            <p class="footer__copy-left">© 2026 Todos los derechos reservados. Diseñado por Karol, Laura y Gabriel</p>
+            <p class="footer__copy-right">
+                <a href="#">Términos y condiciones</a> |
+                <a href="#">Política de privacidad</a> |
+                <a href="#">Términos de uso</a>
+            </p>
+        </div>
+
+    </footer>
+
+    <script src="JS/main.js"></script>
+
+</body>
+</html>
+

@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda | Ratón sin Miedo</title>
+    <meta name="description" content="Tienda de Ratón sin Miedo — todos los productos de nuestras colecciones.">
+    <meta name="author" content="Gabriel Palacio">
+    <link rel="shortcut icon" href="images/logo-rojo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+
+</head>
+<body class="page page--tienda">
+
+    <!-- ════════════════════════════════════════════
+         HERO — Tienda
+    ════════════════════════════════════════════ -->
+    <section class="tienda-hero" aria-label="Tienda hero">
+
+        <div class="tienda-hero__bg" role="presentation"></div>
+        <div class="tienda-hero__overlay" role="presentation"></div>
+
+        <!-- ── Navegación (idéntica a todas las páginas) ── -->
+        <nav class="hero__nav" aria-label="Navegación principal">
+            <a href="index.html" aria-label="Ir a inicio">
+                <img class="hero__logo" src="images/raton-logo-blanco.png" alt="Ratón sin Miedo" width="53" height="79">
+            </a>
+            <ul class="hero__nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li class="nav-dropdown">
+                    <a href="colecciones.html" class="nav-dropdown__trigger">
+                        Colecciones <i class="fa-solid fa-chevron-down nav-dropdown__arrow"></i>
+                    </a>
+                    <ul class="nav-dropdown__menu" role="menu">
+                        <li><a href="colecciones.html" role="menuitem">Gatitos con ansiedad</a></li>
+                        <li><a href="overthegardenwall.html" role="menuitem">Over the Garden Wall</a></li>
+                        <li><a href="rocky.html" role="menuitem">The Rocky Horror Picture Show</a></li>
+                        <li><a href="frieren.html" role="menuitem">Frieren</a></li>
+                        <li><a href="nadie.html" role="menuitem">"Nadie es ilegal"</a></li>
+                    </ul>
+                </li>
+                <li><a href="tienda.html" class="active">Tienda</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+            <div class="hero__nav-icons">
+                <button class="hero__nav-icon" aria-label="Buscar">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+                <button class="hero__nav-icon hero__nav-icon--hamburger" aria-label="Abrir menú" id="hamburger-btn">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <button class="hero__nav-icon hero__nav-icon--bag" aria-label="Tienda">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                </button>
+            </div>
+        </nav>
+
+        <!-- Menú mobile -->
+        <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li class="mobile-menu__has-sub">
+                    <span class="mobile-menu__sub-title">Colecciones</span>
+                    <ul class="mobile-menu__sub">
+                        <li><a href="colecciones.html">Gatitos con ansiedad</a></li>
+                        <li><a href="overthegardenwall.html">Over the Garden Wall</a></li>
+                        <li><a href="rocky.html">The Rocky Horror Picture Show</a></li>
+                        <li><a href="frieren.html">Frieren</a></li>
+                        <li><a href="nadie.html">"Nadie es ilegal"</a></li>
+                    </ul>
+                </li>
+                <li><a href="tienda.html">Tienda</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </div>
+
+        <!-- Título del hero -->
+        <div class="tienda-hero__body">
+            <h1 class="tienda-hero__title font-display">Tienda</h1>
+            <p class="tienda-hero__breadcrumb">Home / Tienda</p>
+        </div>
+
+    </section>
+
+
+    <!-- ════════════════════════════════════════════
+         SECCIÓN 1 — Gatitos con ansiedad (verde claro)
+    ════════════════════════════════════════════ -->
+    <section class="tienda-col tienda-col--gatitos" aria-label="Gatitos con ansiedad">
+
+        <!-- Imagen de fondo con título superpuesto -->
+        <div class="tienda-col__banner">
+            <div class="tienda-col__bannergca-ph" aria-label="Placeholder imagen — gorra Low Social Battery"></div>
+            <h2 class="tienda-col__banner-title font-display">Gatitos con ansiedad</h2>
+        </div>
+
+        <!-- Slider de productos -->
+        <div class="blog-slider-wrap tienda-slider-wrap">
+            <div class="blog-slider" id="slider-gatitos">
+                <div class="blog-slide tienda-slide">
+                    <!-- [LIGHTBOX MÓVIL — AGREGADO] <a> envuelve la imagen existente.
+                         • href         → misma ruta del img; es lo que abre el lightbox a pantalla completa
+                         • data-lb-group → atributo personalizado que guarda el nombre de la galería;
+                                           el JS lo copia a data-lightbox SOLO en móvil (≤640px)
+                         • data-title   → caption que aparece bajo la imagen en el lightbox
+                         En desktop: data-lightbox no existe → lightbox no se activa; click hace nada -->
+                    <div class="tienda-slide__img-ph" aria-label="Gorra low social battery — negra">
+                        <img data-src="images/gorra-negra-slide.jpg" src="images/gorra-negra-slide.jpg" alt="Gorra low social battery — negra">
+                    </div>
+                </div>
+                <div class="blog-slide tienda-slide">
+                    <div class="tienda-slide__img-ph" aria-label="Gorra low social battery — verde">
+                        <img data-src="images/LowSocialBattery-Verde.jpg.jpeg" src="images/LowSocialBattery-Verde.jpg.jpeg" alt="Gorra low social battery — verde">
+                    </div>
+                </div>
+                <div class="blog-slide tienda-slide">
+                    <div class="tienda-slide__img-ph" aria-label="Bolso hereje">
+                        <img data-src="images/Bolso-Hereje-Solo-Mitad.jpg" src="images/Bolso-Hereje-Solo-Mitad.jpg" alt="Bolso hereje">
+                    </div>
+                </div>
+                <div class="blog-slide tienda-slide">
+                    <div class="tienda-slide__img-ph" aria-label="Bolso hereje">
+                        <img data-src="images/Bolso-Hereje-Escaleras.jpg" src="images/Bolso-Hereje-Escaleras.jpg" alt="Bolso hereje">
+                    </div>
+                </div>
+                <div class="blog-slide tienda-slide">
+                    <div class="tienda-slide__img-ph" aria-label="Bolso hereje">
+                        <img data-src="images/blog-bolso-hereje-arbol.png" src="images/blog-bolso-hereje-arbol.png" alt="Bolso hereje">
+                    </div>
+                </div>
+            </div>
+            <!-- Info del producto activo (cambia sin animación) -->
+            <div class="tienda-slider-info blog-slider-info" id="info-gatitos">
+                <p class="tienda-slider-info__name blog-slider-info__name">Nombre del producto</p>
+                <p class="tienda-slider-info__price blog-slider-info__price">00.000 $</p>
+                <a href="#" class="btn--tienda-comprar">Comprar</a>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- ════════════════════════════════════════════
+         SECCIÓN 2 — Over the Garden Wall (verde oscuro)
+    ════════════════════════════════════════════ -->
+    <section class="tienda-col tienda-col--otgw" aria-label="Over the Garden Wall">
+
+        <div class="tienda-col__banner">
+            <div class="tienda-col__bannerotgw-ph" aria-label="Placeholder imagen — boceto Over the Garden Wall"></div>
+            <h2 class="tienda-col__banner-title font-display">Over the Garden Wall</h2>
+        </div>
+
+        <div class="blog-slider-wrap tienda-slider-wrap">
+            <div class="blog-slider" id="slider-otgw">
+                <div class="blog-slide tienda-slide">
+                    <div class="tienda-slide__img-ph" aria-label="Camiseta Over the Garden Wall">
+                        <img data-src="images/camiseta-slide.jpg" src="images/camiseta-slide.jpg" alt="Camiseta Over the Garden Wall">
+                    </div>
+                </div>
+                <div class="blog-slide tienda-slide">
+                    <div class="tienda-slide__img-ph" aria-label="Postal Over the Garden Wall">
+                        <img data-src="images/postal-overthegarden-slide.jpg" src="images/postal-overthegarden-slide.jpg" alt="Postal Over the Garden Wall">
+                    </div>
+                </div>
+                <div class="blog-slide tienda-slide">
+                    <div class="tienda-slide__img-ph" aria-label="Sticker pack Over the Garden Wall">
+                        <img data-src="images/Stickers-otgw-slide.jpg" src="images/Stickers-otgw-slide.jpg" alt="Sticker pack Over the Garden Wall">
+                    </div>
+                </div>
+                <div class="blog-slide tienda-slide">
+                    <div class="tienda-slide__img-ph" aria-label="Taza OTGW - Morada">
+                        <img data-src="images/Taza-morada-slide.jpg" src="images/Taza-morada-slide.jpg" alt="Taza Over The Garden Wall - Morada">
+                    </div>
+                </div>
+                <div class="blog-slide tienda-slide">
+                    <div class="tienda-slide__img-ph" aria-label="Taza OTGW - Blanca">
+                        <img data-src="images/Taza-Blanca-slide.jpg" src="images/Taza-Blanca-slide.jpg" alt="Taza Over The Garden Wall - Blanca">
+                    </div>
+                </div>
+            </div>
+            <div class="tienda-slider-info blog-slider-info" id="info-otgw">
+                <p class="tienda-slider-info__name blog-slider-info__name">Nombre del producto</p>
+                <p class="tienda-slider-info__price blog-slider-info__price">00.000 $</p>
+                <a href="#" class="btn--tienda-comprar">Comprar</a>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- ════════════════════════════════════════════
+         SECCIÓN 3 — Nadie es Ilegal (beige/crema)
+    ════════════════════════════════════════════ -->
+    <section class="tienda-col tienda-col--nadie" aria-label="Nadie es Ilegal">
+
+        <div class="tienda-col__banner">
+            <div class="tienda-col__bannernadie-ph" aria-label="Placeholder imagen — Nadie es Ilegal"></div>
+            <h2 class="tienda-col__banner-title font-display">Nadie es Ilegal</h2>
+        </div>
+
+        <div class="blog-slider-wrap tienda-slider-wrap">
+            <div class="blog-slider" id="slider-nadie">
+                <div class="blog-slide tienda-slide">
+                    <div class="tienda-slide__img-ph" aria-label="Camiseta Nadie es Ilegal">
+                        <img data-src="images/Camiseta-Nadie-es-Ilegal.jpg" src="images/Camiseta-Nadie-es-Ilegal.jpg" alt="Camiseta Nadie es Ilegal">
+                    </div>
+                </div>
+                <div class="blog-slide tienda-slide">
+                    <div class="tienda-slide__img-ph" aria-label="camiseta Nadie es Ilegal">
+                        <img data-src="images/hero-bg.jpeg" src="images/hero-bg.jpeg" alt="Camiseta Nadie es Ilegal">
+                    </div>
+                </div>
+                <div class="blog-slide tienda-slide">
+                    <div class="tienda-slide__img-ph" aria-label="camiseta Nadie es Ilegal">
+                        <img data-src="images/nadieesilegal-slide.jpg" src="images/nadieesilegal-slide.jpg" alt="Camiseta Nadie es Ilegal">
+                    </div>
+                </div>
+                <div class="blog-slide tienda-slide">
+                    <div class="tienda-slide__img-ph" aria-label="camiseta Nadie es Ilegal">
+                        <img data-src="images/Estampado-Camiseta-Nadie-es-Ilegal.jpg" src="images/Estampado-Camiseta-Nadie-es-Ilegal.jpg" alt="Camiseta Nadie es Ilegal">
+                    </div>
+                </div>
+                <div class="blog-slide tienda-slide">
+                    <div class="tienda-slide__img-ph" aria-label="camiseta Nadie es Ilegal">
+                        <img data-src="images/col-nadie.jpeg" src="images/col-nadie.jpeg" alt="Camiseta Nadie es Ilegal">
+                    </div>
+                </div>
+            </div>
+            <div class="tienda-slider-info blog-slider-info" id="info-nadie">
+                <p class="tienda-slider-info__name blog-slider-info__name">Nombre del producto</p>
+                <p class="tienda-slider-info__price blog-slider-info__price">00.000 $</p>
+                <a href="#" class="btn--tienda-comprar">Comprar</a>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- ════════════════════════════════════════════
+         SECCIÓN 4 — Frieren (azul claro)
+    ════════════════════════════════════════════ -->
+    <section class="tienda-col tienda-col--frieren" aria-label="Frieren">
+
+        <div class="tienda-col__banner">
+            <div class="tienda-col__bannerfrieren-ph" aria-label="Placeholder imagen — Frieren"></div>
+            <h2 class="tienda-col__banner-title font-display">Frieren</h2>
+        </div>
+
+        <div class="blog-slider-wrap tienda-slider-wrap">
+            <div class="blog-slider" id="slider-frieren">
+                <div class="blog-slide tienda-slide">
+                    <div class="tienda-slide__img-ph" aria-label="Bufanda frieren azul">
+                        <img data-src="images/Bufanda-Completa-Frieren-Azul.jpg" src="images/Bufanda-Completa-Frieren-Azul.jpg" alt="Bufanda Completa Frieren Azul">
+                    </div>
+                </div>
+                <div class="blog-slide tienda-slide">
+                    <div class="tienda-slide__img-ph" aria-label="Bufanda frieren blanco">
+                        <img data-src="images/Bufanda-Completa-Frieren-Blanco.jpg" src="images/Bufanda-Completa-Frieren-Blanco.jpg" alt="Bufanda Completa Frieren Blanco">
+                    </div>
+                </div>
+                <div class="blog-slide tienda-slide">
+                    <div class="tienda-slide__img-ph" aria-label="Textura bufanda Frieren Azul">
+                        <img data-src="images/Fotos-bufanda-Frieren-Azul.jpg" src="images/Fotos-bufanda-Frieren-Azul.jpg" alt="Textura bufanda Frieren Azul">
+                    </div>
+                </div>
+                <div class="blog-slide tienda-slide">
+                    <div class="tienda-slide__img-ph" aria-label="Textura bufanda Frieren Blanca">
+                        <img data-src="images/frieren-tienda-slide2.jpg" src="images/frieren-tienda-slide2.jpg" alt="Textura bufanda Frieren Blanca">
+                    </div>
+                </div>
+                <div class="blog-slide tienda-slide">
+                    <div class="tienda-slide__img-ph" aria-label="Bufanda Frieren">
+                        <img data-src="images/frieren-tienda-slide.jpg" src="images/frieren-tienda-slide.jpg" alt="Bufanda Frieren">
+                    </div>
+                </div>
+            </div>
+            <div class="tienda-slider-info blog-slider-info" id="info-frieren">
+                <p class="tienda-slider-info__name blog-slider-info__name">Nombre del producto</p>
+                <p class="tienda-slider-info__price blog-slider-info__price">00.000 $</p>
+                <a href="#" class="btn--tienda-comprar">Comprar</a>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- ════════════════════════════════════════════
+         SECCIÓN 5 — Rocky Horror (vino/rojo oscuro)
+    ════════════════════════════════════════════ -->
+    <section class="tienda-col tienda-col--rocky" aria-label="The Rocky Horror Picture Show">
+
+        <div class="tienda-col__banner">
+            <div class="tienda-col__bannerrocky-ph" aria-label="Placeholder imagen — Rocky Horror"></div>
+            <h2 class="tienda-col__banner-title font-display">The Rocky Horror Picture Show</h2>
+        </div>
+
+        <div class="blog-slider-wrap tienda-slider-wrap">
+            <div class="blog-slider" id="slider-rocky">
+                <div class="blog-slide tienda-slide">
+                    <div class="tienda-slide__img-ph" aria-label="Buso Rocky Horror Picture Show">
+                        <img data-src="images/therockhorrorpictureshow.jpg" src="images/therockhorrorpictureshow.jpg" alt="Buso Rocky Horror Picture Show">
+                    </div>
+                </div>
+                <div class="blog-slide tienda-slide">
+                    <div class="tienda-slide__img-ph" aria-label="Buso Rocky Horror Show">
+                        <img data-src="images/horror-sueter-slide2.jpg" src="images/horror-sueter-slide2.jpg" alt="Buso rocky horror show">
+                    </div>
+                </div>
+                <div class="blog-slide tienda-slide">
+                    <div class="tienda-slide__img-ph" aria-label="Bufanda Rocky Horror">
+                        <img data-src="images/Bufanda-Rocky-Horror.jpg" src="images/Bufanda-Rocky-Horror.jpg" alt="Bufanda Rocky Horror">
+                    </div>
+                </div>
+                <div class="blog-slide tienda-slide">
+                    <div class="tienda-slide__img-ph" aria-label="Bufanda Rocky Horror">
+                        <img data-src="images/Tia-de-Lau.jpg" src="images/Tia-de-Lau.jpg" alt="Bufanda Rocky Horror">
+                    </div>
+                </div>
+                <div class="blog-slide tienda-slide">
+                    <div class="tienda-slide__img-ph" aria-label="combo Rocky Horror">
+                        <img data-src="images/Combo-Rocky-Horror.jpg" src="images/Combo-Rocky-Horror.jpg" alt="Combo Rocky Horror">
+                    </div>
+                </div>
+            </div>
+            <div class="tienda-slider-info blog-slider-info" id="info-rocky">
+                <p class="tienda-slider-info__name blog-slider-info__name">Nombre del producto</p>
+                <p class="tienda-slider-info__price blog-slider-info__price">00.000 $</p>
+                <a href="#" class="btn--tienda-comprar">Comprar</a>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- ════════════════════════════════════════════
+         SECCIÓN 6 — Filosofía de los Productos
+         Colores INVERTIDOS: fondo blanco, texto vino
+    ════════════════════════════════════════════ -->
+    <section class="tienda-filosofia" aria-label="Filosofía de los productos">
+
+        <!-- Columna izquierda: texto -->
+        <div class="tienda-filosofia__text">
+            <span class="tienda-filosofia__eyebrow">Filosofía de</span>
+            <h2 class="tienda-filosofia__title font-display">Los Productos</h2>
+            <p class="tienda-filosofia__body">
+                Utilizamos la ilustración como el medio para crear experiencias
+                y familiaridades, deseamos que quienes comparten nuestras
+                experiencias puedan identificarse con nuestro trabajo.
+            </p>
+            <p class="tienda-filosofia__body">
+                Nos orientamos a la creación de productos ecológicos y que se
+                acerquen a las técnicas artesanales como la serigrafía,
+                deseamos consolidarnos como una tienda independiente que se
+                rescate desde los espacios artísticos y culturales.
+            </p>
+        </div>
+
+        <!-- Columna derecha: logo sobre fondo blanco con letras rojas -->
+        <div class="tienda-filosofia__logo-wrap">
+            <img
+                src="images/logo-rojo.png"
+                alt="Ratón sin Miedo"
+                class="tienda-filosofia__logo"
+                width="300"
+                height="400"
+            >
+        </div>
+
+    </section>
+
+
+    <!-- ════════════════════════════════════════════
+         6. FOOTER
+    ════════════════════════════════════════════ -->
+    <footer class="footer" aria-label="Pie de página">
+
+        <div class="footer__inner">
+
+            <!-- Col 1: Logo + dirección + email -->
+            <div class="footer__brand">
+                <a href="index.html" class="footer__logo-link">
+                    <img
+                        class="footer__logo" src="images/logo-rojo.png" alt="Ratón sin Miedo" width="89" height="112"
+                    >
+                </a>
+                <address class="footer__address">
+                    <p>Kr5 #6b - 50</p>
+                    <p>+57-333 7155134</p>
+                    <p class="footer__email">ratonsinmiedo@gmail.com</p>
+                </address>
+            </div>
+
+            <!-- Col 2: Navegación -->
+            <div>
+                <span class="footer__col-title">Ratón sin miedo</span>
+                <nav class="footer__nav" aria-label="Menú footer">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="colecciones.html">Colecciones</a>
+                    <a href="tienda.html">Tienda</a>
+                    <a href="blog.html">Blog</a>
+                </nav>
+            </div>
+
+            <!-- Col 3: Información -->
+            <div>
+                <span class="footer__col-title">Información</span>
+                <nav class="footer__info" aria-label="Información">
+                    <a href="#">Soporte de productos</a>
+                    <a href="#">Sigue tu pedido</a>
+                    <a href="#">Políticas</a>
+                    <a href="#">Devoluciones</a>
+                </nav>
+            </div>
+
+            <!-- Col 4: Contacto -->
+            <div>
+                <span class="footer__col-title">Contacto</span>
+                <div class="footer__social">
+                    <a href="https://www.instagram.com/ratonsinmiedo?igsh=djhrYjN5b244bHVk" aria-label="Síguenos en Instagram" target="_blank" rel="noopener">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="#" aria-label="Síguenos en Facebook" target="_blank" rel="noopener">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.tiktok.com/@raton.sin.miedo" aria-label="Contáctanos por TikTok" target="_blank" rel="noopener">
+                        <i class="fa-brands fa-tiktok"></i>
+                    </a>
+                     <a href="https://l.instagram.com/?u=https%3A%2F%2Fwa.me%2Fc%2F573337155134%3Futm_source%3Dig%26utm_medium%3Dsocial%26utm_content%3Dlink_in_bio%26fbclid%3DPAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnS6jty4v8LMUCx2iz-spdZbRvUEsHA3uMK_7zi77ctGq3ln0jvOvZajJDkGY_aem_ALa05v6FEXMoqRFcWZmpUA&e=AT7pekSHJeFXGN1HCJXXSYn9yuwvh3We7jbUv86wxtn8JyfN7ifb2MipOksy78RbpOYRB2Yy22dVsdAdKppnVOdoUJeEhUKSOpgLB9wMFkRzd2ZGjOPUjSBwXw" aria-label="Contáctanos por WhatsApp" target="_blank" rel="noopener">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    
+                </div>
+            </div>
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3977.0101714239454!2d-74.08090871388347!3d4.592196932391077!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f99a9f0b489ed%3A0xd87d430e3b54e823!2zQ3JhLiA1ICM2Qi01MCwgQm9nb3TDoSwgRC5DLCBCb2dvdMOh!5e0!3m2!1ses!2sco!4v1774751571352!5m2!1ses!2sco" width="200" height="120" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </div>
+
+        <!-- Copyright — mobile: centrado | desktop: izq/der -->
+        <div class="footer__copy">
+            <p class="footer__copy-left">© 2026 Todos los derechos reservados. Diseñado por Karol, Laura y Gabriel</p>
+            <p class="footer__copy-right">
+                <a href="#">Términos y condiciones</a> |
+                <a href="#">Política de privacidad</a> |
+                <a href="#">Términos de uso</a>
+            </p>
+        </div>
+
+    </footer>
+
+    <script src="JS/main.js"></script>
+
+    <!-- MODAL PROPIO — abre la imagen al hacer clic en móvil (<768px) -->
+    <div id="rsm-modal" class="rsm-modal" role="dialog" aria-modal="true" aria-label="Imagen ampliada">
+        <button id="rsm-modal-close" class="rsm-modal__close" aria-label="Cerrar">&#x2715;</button>
+        <img id="rsm-modal-img" src="" alt="">
+    </div>
+
+    <script>
+        (function () {
+            var MOBILE_BP = 767;
+            var modal     = document.getElementById('rsm-modal');
+            var modalImg  = document.getElementById('rsm-modal-img');
+            var closeBtn  = document.getElementById('rsm-modal-close');
+
+            function openModal(src, alt) {
+                modalImg.src = src;
+                modalImg.alt = alt || '';
+                modal.classList.add('rsm-open');
+                document.body.style.overflow = 'hidden';
+            }
+
+            function closeModal() {
+                modal.classList.remove('rsm-open');
+                document.body.style.overflow = '';
+                modalImg.src = '';
+            }
+
+            /* Delegacion en document — cubre slides originales Y clones */
+            document.addEventListener('click', function (e) {
+                /* Clic en el fondo del modal -> cerrar */
+                if (e.target === modal) { closeModal(); return; }
+
+                /* Solo actuar en movil */
+                if (window.innerWidth > MOBILE_BP) return;
+
+                var img = e.target.closest('.tienda-slide__img-ph img');
+                if (!img) return;
+
+                e.preventDefault();
+                e.stopPropagation();
+                openModal(img.src, img.alt);
+            });
+
+            closeBtn.addEventListener('click', closeModal);
+
+            /* Cerrar con Escape */
+            document.addEventListener('keydown', function (e) {
+                if (e.key === 'Escape') closeModal();
+            });
+        }());
+    </script>
+
+</body>
+</html>
+

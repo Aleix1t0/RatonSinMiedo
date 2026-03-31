@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog — Ratón sin Miedo</title>
+    <meta name="description" content="Blog de Ratón sin Miedo: ideas, inspiración y procesos de creación.">
+    <meta name="author" content="Laura Díaz">
+    <link rel="shortcut icon" href="images/logo-rojo.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body class="page page--blog">
+
+    <!-- ════════════════════════════════════════════
+         1. HERO — Queremos conocerte
+    ════════════════════════════════════════════ -->
+    <section class="blog-hero" aria-label="Hero Blog">
+
+        <div class="blog-hero__bg" role="presentation"></div>
+        <div class="blog-hero__overlay" role="presentation"></div>
+
+        <nav class="hero__nav" aria-label="Navegación principal">
+            <a href="index.html" aria-label="Ir a inicio">
+                <img
+                    class="hero__logo"
+                    src="images/raton-logo-blanco.png"
+                    alt="Ratón sin Miedo"
+                    width="53"
+                    height="79"
+                >
+            </a>
+            <ul class="hero__nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li class="nav-dropdown">
+                    <a href="colecciones.html" class="nav-dropdown__trigger">
+                        Colecciones <i class="fa-solid fa-chevron-down nav-dropdown__arrow"></i>
+                    </a>
+                    <ul class="nav-dropdown__menu" role="menu">
+                        <li><a href="colecciones.html" role="menuitem">Gatitos con ansiedad</a></li>
+                        <li><a href="overthegardenwall.html" role="menuitem">Over the Garden Wall</a></li>
+                        <li><a href="rocky.html" role="menuitem">The Rocky Horror Picture Show</a></li>
+                        <li><a href="frieren.html" role="menuitem">Frieren</a></li>
+                        <li><a href="nadie.html" role="menuitem">"Nadie es ilegal"</a></li>
+                    </ul>
+                </li>
+                <li><a href="tienda.html">Tienda</a></li>
+                <li><a href="blog.html" class="active">Blog</a></li>
+            </ul>
+            <div class="hero__nav-icons">
+                <button class="hero__nav-icon" aria-label="Buscar">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+                <button class="hero__nav-icon hero__nav-icon--hamburger" aria-label="Abrir menú" id="hamburger-btn">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <button class="hero__nav-icon hero__nav-icon--bag" aria-label="Tienda">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                </button>
+            </div>
+        </nav>
+
+        <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li class="mobile-menu__has-sub">
+                    <span class="mobile-menu__sub-title">Colecciones</span>
+                    <ul class="mobile-menu__sub">
+                        <li><a href="colecciones.html">Gatitos con ansiedad</a></li>
+                        <li><a href="overthegardenwall.html">Over the Garden Wall</a></li>
+                        <li><a href="rocky.html">The Rocky Horror Picture Show</a></li>
+                        <li><a href="frieren.html">Frieren</a></li>
+                        <li><a href="nadie.html">"Nadie es ilegal"</a></li>
+                    </ul>
+                </li>
+                <li><a href="tienda.html">Tienda</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </div>
+
+        <div class="blog-hero__body">
+            <p class="blog-hero__eyebrow">Un lugar para escapar de la ansiedad</p>
+            <h1 class="blog-hero__title font-display">Queremos<br>conocerte</h1>
+        </div>
+
+    </section>
+
+
+    <!-- ════════════════════════════════════════════
+         2. IDEAS E INSPIRACIÓN — fondo verde
+    ════════════════════════════════════════════ -->
+    <section class="blog-ideas" aria-label="Ideas e inspiración">
+
+        <header class="blog-sec-header">
+            <h2 class="blog-sec-header__title font-display">Ideas e <em>inspiración</em></h2>
+            <p class="blog-sec-header__sub">¿Qué hay detrás de Ratón sin miedo?</p>
+            <p class="blog-sec-header__body">
+                Ratón sin miedo nace del amor por el arte y la belleza de lo poco convencional,
+                encontramos en la naturaleza y el miedo, nuestro convustible para dar rienda suelta
+                a nuestras ideas y fijaciones. Al inspirarnos en obras que admiramos, buscamos
+                rescatar aquello raro, incómodo o ignorado para permitirnos traerlo a la superficie
+                como un lugar de confort.
+            </p>
+        </header>
+
+        <!-- Fila 1: La naturaleza — texto izq, imagen der -->
+        <div class="blog-ideas__row">
+            <div class="blog-ideas__text">
+                <h3 class="blog-ideas__name font-display">La naturaleza</h3>
+                <p class="blog-ideas__desc">
+                    La naturaleza es un elemento que para nosotras va a representar siempre
+                    confort y fascinación. Es bella, caótica, libre y acogedora siempre.
+                    Nos permite explorar formas y objetos que crecen sin el control y
+                    orden humano.
+                </p>
+            </div>
+            <div class="blog-ideas__img-wrap">
+                <div class="blog-ph blog-ph--img" aria-label="Foto: gato con gorra Low Social Battery en repisa">
+                    <img src="images/blog-gato-naturaleza.png" alt="Gato con gorra Low Social Battery" />
+                </div>
+            </div>
+        </div>
+
+        <!-- Fila 2: Lo raro y lo oscuro — imagen izq, texto der (row-reverse invierte el orden) -->
+        <div class="blog-ideas__row blog-ideas__row--rev">
+            <div class="blog-ideas__text">
+                <h3 class="blog-ideas__name font-display">Lo raro y lo<br>oscuro</h3>
+                <p class="blog-ideas__desc">
+                    Es en las sombras y la rareza donde se encuentran las oportunidades para
+                    sacar las partes menos convencionales de cada quien y potenciarlas hasta
+                    llegar a la satisfacción máxima.
+                </p>
+            </div>
+            <div class="blog-ideas__img-wrap">
+                <div class="blog-ph blog-ph--img" aria-label="Foto: bolso Hereje apoyado en árbol">
+                    <img src="images/blog-bolso-hereje-arbol.png" alt="Bolso Hereje apoyado en árbol" />
+                </div>
+            </div>
+        </div>
+
+        <!-- Fila 3: Imágenes y contemplación — texto izq, imagen der -->
+        <div class="blog-ideas__row">
+            <div class="blog-ideas__text">
+                <h3 class="blog-ideas__name font-display">Imágenes y<br>contémplación</h3>
+                <p class="blog-ideas__desc">
+                    El arte es una oportunidad para poner en pausa la mente y permitirse
+                    prestar verdadera atención al mundo, requiere de tiempo, observación e
+                    introspección para que se manifieste de forma genuina.
+                </p>
+            </div>
+            <div class="blog-ideas__img-wrap">
+                <div class="blog-ph blog-ph--img" aria-label="Foto: taza esmaltada con ilustración y flores">
+                    <img src="images/blog-taza-mas-alla-del-jardin.png" alt="Taza blanca más allá del jardín" />
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- ════════════════════════════════════════════
+         3. PROCESOS DE CREACIÓN — fondo crema
+    ════════════════════════════════════════════ -->
+    <section class="blog-procesos" aria-label="Procesos de creación">
+
+        <header class="blog-procesos__header">
+            <h2 class="blog-procesos__title font-display">Procesos de creación</h2>
+            <p class="blog-procesos__sub">¿Qué hay detrás de Ratón sin miedo?</p>
+            <p class="blog-procesos__body">
+                Ratón sin miedo nace del amor por el arte y la belleza de lo poco convencional,
+                encontramos en la naturaleza y el miedo, nuestro convustible para dar rienda suelta
+                a nuestras ideas y fijaciones. Al inspirarnos en obras que admiramos, buscamos
+                rescatar aquello raro, incómodo o ignorado para permitirnos traerlo a la superficie
+                como un lugar de confort.
+            </p>
+        </header>
+
+        <!-- Ilustración y tinta -->
+        <div class="blog-proceso">
+            <h3 class="blog-proceso__title font-display">Ilustración y tinta</h3>
+            <p class="blog-proceso__desc">
+                La tinta es una técnica tanto expresiva como gráfica y controlada, trae
+                reminicencias a las técnicas ilustrativas más tradicionales y permite crear
+                imágenes orgánicas y agradables.
+            </p>
+            <div class="blog-proceso__grid">
+                <div class="blog-ph blog-ph--proceso blog-ph--img" aria-label="Foto: boceto Rocky Horror - piernas">
+                    <img src="images/blog-boceto-rocky-piernas.png" alt="Boceto Rocky Horror - piernas" />
+                </div>
+                <div class="blog-ph blog-ph--proceso blog-ph--img" aria-label="Postal Más allá del jardín">
+                    <img src="images/blog-postal-mas-alla.png" alt="Postal Más allá del jardín" />
+                </div>
+                <div class="blog-ph blog-ph--proceso blog-ph--img" aria-label="Boceto Nadie es ilegal">
+                    <img src="images/blog-boceto-nadie-es-ilegal.png" alt="Boceto Nadie es ilegal" />
+                </div>
+            </div>
+        </div>
+
+        <!-- Serigrafía -->
+        <div class="blog-proceso">
+            <h3 class="blog-proceso__title font-display">Serigrafía</h3>
+            <p class="blog-proceso__desc">
+                La serigrafía es una de las rutas para la creación de productos y estampados
+                artesanales, el proceso manual y la singularidad de las piezas creadas con esta
+                técnica, nos permite darle un valor agregado y una autenticidad a cada objeto.
+            </p>
+            <div class="blog-proceso__grid">
+                <div class="blog-ph blog-ph--proceso blog-ph--img" aria-label="Foto: tintas (formato cuadrado)">
+                    <img src="images/Foto-Tintas-FormatoCuadrado.jpg" alt="Tintas para serigrafía (formato cuadrado)" />
+                </div>
+                <div class="blog-ph blog-ph--proceso blog-ph--img" aria-label="Camiseta: Más allá del jardín">
+                    <img src="images/camiseta-mas.-alla-del-jardin.jpg" alt="Camiseta Más allá del jardín" />
+                </div>
+                <div class="blog-ph blog-ph--proceso blog-ph--img" aria-label="The Rocky Horror Picture Show">
+                    <img src="images/therockhorrorpictureshow.jpg" alt="The Rocky Horror Picture Show" />
+                </div>
+            </div>
+        </div>
+
+        <!-- Arté digital -->
+        <div class="blog-proceso">
+            <h3 class="blog-proceso__title font-display">Arté digital</h3>
+            <p class="blog-proceso__desc">
+                Para nosotras, el arte digital más que reemplazar las técnicas análogas,
+                es una herramienta de acompañamiento que en algunos casos hasta nos permite
+                potenciarlas, es una herramienta que abre los horizontes para la creación de
+                imágenes y objetos.
+            </p>
+            <div class="blog-proceso__grid">
+                <div class="blog-ph blog-ph--proceso blog-ph--img" aria-label="Ilustración digital: Nadie es ilegal">
+                    <img src="images/Estampado-Completo-Camiseta-Nadie-es-Ilegal.jpg" alt="Estampado completo Camiseta Nadie es Ilegal" />
+                </div>
+                <div class="blog-ph blog-ph--proceso blog-ph--img" aria-label="Ilustración digital: personaje TRHPS">
+                    <img src="images/trhs.jpg" alt="Ilustración TRHPS" />
+                </div>
+                <div class="blog-ph blog-ph--proceso blog-ph--img" aria-label="Ilustración digital: Low Social Battery">
+                    <img src="images/lsbSticker.png" alt="Sticker LSB" />
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- ════════════════════════════════════════════
+         4. OPINIONES — formulario sobre foto
+    ════════════════════════════════════════════ -->
+    <section class="blog-form" aria-label="Opiniones">
+
+        <div class="blog-form__bg" role="presentation"></div>
+        <div class="blog-form__overlay" role="presentation"></div>
+
+        <div class="blog-form__content">
+            <h2 class="blog-form__title font-display">Opiniones</h2>
+            <p class="blog-form__subtitle">
+                Deseamos conocer tus opiniones e ideas, este espacio es para ti
+            </p>
+            <form class="blog-form__form" action="#" method="post">
+                <div class="blog-form__field">
+                    <label for="name" class="blog-form__label">Nombre:</label>
+                    <input type="text" id="name" name="name" class="blog-form__input" required aria-label="Tu nombre">
+                </div>
+                <div class="blog-form__field">
+                    <label for="phone" class="blog-form__label">Teléfono:</label>
+                    <input type="tel" id="phone" name="phone" class="blog-form__input" aria-label="Tu teléfono">
+                </div>
+                <div class="blog-form__field">
+                    <label for="email" class="blog-form__label">Email:</label>
+                    <input type="email" id="email" name="email" class="blog-form__input" required aria-label="Tu email">
+                </div>
+                <div class="blog-form__field">
+                    <label for="opinion" class="blog-form__label">Opinión:</label>
+                    <textarea id="opinion" name="opinion" class="blog-form__textarea" rows="5" required aria-label="Tu opinión"></textarea>
+                </div>
+                <button type="submit" class="blog-form__submit">Enviar opinión</button>
+            </form>
+        </div>
+
+    </section>
+
+
+    <!-- ════════════════════════════════════════════
+         5. OTRAS OPINIONES — fondo vino
+    ════════════════════════════════════════════ -->
+    <section class="blog-otras" aria-label="Otras opiniones">
+
+        <h2 class="blog-otras__title font-display">Otras opiniones</h2>
+
+        <p class="blog-otras__body">
+            Ratón sin miedo nace del amor por el arte y la belleza de lo poco
+            convencional, encontramos en la naturaleza y el miedo, nuestro convustible
+            para dar rienda suelta a nuestras ideas y fijaciones. Al inspirarnos en obras
+            que admiramos, buscamos rescatar aquello raro, incómodo o ignorado para
+            permitirnos traerlo a la superficie como un lugar de confort.
+        </p>
+
+        <div class="blog-otras__list">
+
+            <article class="blog-opinion">
+                <div class="blog-opinion__avatar" aria-hidden="true"></div>
+                <blockquote class="blog-opinion__bubble">
+                    <p>Ratón sin miedo nace del amor por el arte y la belleza de lo poco
+                    convencional, encontramos en la naturaleza y el miedo, nuestro
+                    convustible para dar rienda suelta a nuestras ideas y fijaciones.</p>
+                </blockquote>
+            </article>
+
+            <article class="blog-opinion">
+                <div class="blog-opinion__avatar" aria-hidden="true"></div>
+                <blockquote class="blog-opinion__bubble">
+                    <p>Ratón sin miedo nace del amor por el arte y la belleza de lo poco
+                    convencional, encontramos en la naturaleza y el miedo, nuestro
+                    convustible para dar rienda suelta a nuestras ideas y fijaciones.</p>
+                </blockquote>
+            </article>
+
+            <article class="blog-opinion">
+                <div class="blog-opinion__avatar" aria-hidden="true"></div>
+                <blockquote class="blog-opinion__bubble">
+                    <p>Ratón sin miedo nace del amor por el arte y la belleza de lo poco
+                    convencional, encontramos en la naturaleza y el miedo, nuestro
+                    convustible para dar rienda suelta a nuestras ideas y fijaciones.</p>
+                </blockquote>
+            </article>
+
+        </div>
+
+    </section>
+
+
+   <!-- ════════════════════════════════════════════
+         6. FOOTER
+    ════════════════════════════════════════════ -->
+    <footer class="footer" aria-label="Pie de página">
+
+        <div class="footer__inner">
+
+            <!-- Col 1: Logo + dirección + email -->
+            <div class="footer__brand">
+                <a href="index.html" class="footer__logo-link">
+                    <img
+                        class="footer__logo" src="images/logo-rojo.png" alt="Ratón sin Miedo" width="89" height="112"
+                    >
+                </a>
+                <address class="footer__address">
+                    <p>Kr5 #6b - 50</p>
+                    <p>+57-333 7155134</p>
+                    <p class="footer__email">ratonsinmiedo@gmail.com</p>
+                </address>
+            </div>
+
+            <!-- Col 2: Navegación -->
+            <div>
+                <span class="footer__col-title">Ratón sin miedo</span>
+                <nav class="footer__nav" aria-label="Menú footer">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="colecciones.html">Colecciones</a>
+                    <a href="tienda.html">Tienda</a>
+                    <a href="blog.html">Blog</a>
+                </nav>
+            </div>
+
+            <!-- Col 3: Información -->
+            <div>
+                <span class="footer__col-title">Información</span>
+                <nav class="footer__info" aria-label="Información">
+                    <a href="#">Soporte de productos</a>
+                    <a href="#">Sigue tu pedido</a>
+                    <a href="#">Políticas</a>
+                    <a href="#">Devoluciones</a>
+                </nav>
+            </div>
+
+            <!-- Col 4: Contacto -->
+            <div>
+                <span class="footer__col-title">Contacto</span>
+                <div class="footer__social">
+                    <a href="https://www.instagram.com/ratonsinmiedo?igsh=djhrYjN5b244bHVk" aria-label="Síguenos en Instagram" target="_blank" rel="noopener">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="#" aria-label="Síguenos en Facebook" target="_blank" rel="noopener">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.tiktok.com/@raton.sin.miedo" aria-label="Contáctanos por TikTok" target="_blank" rel="noopener">
+                        <i class="fa-brands fa-tiktok"></i>
+                    </a>
+                     <a href="https://l.instagram.com/?u=https%3A%2F%2Fwa.me%2Fc%2F573337155134%3Futm_source%3Dig%26utm_medium%3Dsocial%26utm_content%3Dlink_in_bio%26fbclid%3DPAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnS6jty4v8LMUCx2iz-spdZbRvUEsHA3uMK_7zi77ctGq3ln0jvOvZajJDkGY_aem_ALa05v6FEXMoqRFcWZmpUA&e=AT7pekSHJeFXGN1HCJXXSYn9yuwvh3We7jbUv86wxtn8JyfN7ifb2MipOksy78RbpOYRB2Yy22dVsdAdKppnVOdoUJeEhUKSOpgLB9wMFkRzd2ZGjOPUjSBwXw" aria-label="Contáctanos por WhatsApp" target="_blank" rel="noopener">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    
+                </div>
+            </div>
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3977.0101714239454!2d-74.08090871388347!3d4.592196932391077!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f99a9f0b489ed%3A0xd87d430e3b54e823!2zQ3JhLiA1ICM2Qi01MCwgQm9nb3TDoSwgRC5DLCBCb2dvdMOh!5e0!3m2!1ses!2sco!4v1774751571352!5m2!1ses!2sco" width="200" height="120" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </div>
+
+        <!-- Copyright — mobile: centrado | desktop: izq/der -->
+        <div class="footer__copy">
+            <p class="footer__copy-left">© 2026 Todos los derechos reservados. Diseñado por Karol, Laura y Gabriel</p>
+            <p class="footer__copy-right">
+                <a href="#">Términos y condiciones</a> |
+                <a href="#">Política de privacidad</a> |
+                <a href="#">Términos de uso</a>
+            </p>
+        </div>
+
+    </footer>
+    
+    <script src="JS/main.js"></script>
+</body>
+</html>
+
