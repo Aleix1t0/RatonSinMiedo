@@ -112,7 +112,7 @@ document.addEventListener('DOMContentLoaded', function () {
             'images/col-otgw.png',
             'images/rock-artedigital.jpg',
             'images/home-banner.jpg',
-            'images/bolso-hereje-escaleras.jpg',
+            'images/Bolso-Hereje-Escaleras.jpg',
             'images/Fotos-bufanda-Frieren-AzulyBlanco-2.jpg'
         ];
         var currentIndex = 0;
